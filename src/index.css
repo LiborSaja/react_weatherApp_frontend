@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Kontejner pro celou aplikaci, zajistí pozadí na 100% výšky */
+.app-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Kontejner pro obsah */
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    color: aliceblue;
+}
+
+/* Pozadí jednotlivých skupin počasí*/
+.weather-clear {
+    background-image: url("./Images/clear.jpg");
+}
+
+.weather-cloudy {
+    background-image: url("./Images/cloudy.jpg");
+}
+
+.weather-mist {
+    background-image: url("./Images/mist.jpg");
+}
+
+.weather-thunderstorm {
+    background-image: url("./Images/thunderstorm.jpg");
+}
+
+.weather-snow {
+    background-image: url("./Images/snow.jpg");
+}
+
+.weather-rainy {
+    background-image: url("./Images/rainy.jpg");
+}
+
+.weather-freez {
+    background-image: url("./Images/freez.jpg");
+}
+
+.weather-default {
+    background-image: url("./Images/default.jpg"); /* Změňte cestu na obrázek, který chcete použít jako výchozí */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Zajistí, že pozadí pokryje celou stránku */
 }
