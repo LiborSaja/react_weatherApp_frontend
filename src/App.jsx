@@ -33,7 +33,7 @@ const App = () => {
         if (selectedCity) {
             const { weather_description } = selectedCity;
             if (
-                ["Sunny", "Clear", "Partly cloudy"].includes(
+                ["Sunny", "Clear", "Partly cloudy", "Partly Cloudy"].includes(
                     weather_description
                 )
             ) {
@@ -59,6 +59,7 @@ const App = () => {
                     "Moderate or heavy showers of ice pellets",
                     "Patchy light rain with thunder",
                     "Moderate or heavy rain with thunder",
+                    "Thundery outbreaks in nearby",
                 ].includes(weather_description)
             ) {
                 return "weather-thunderstorm";
